@@ -3,7 +3,7 @@ import Field from '../../components/Field';
 import SideBar from '../../components/SideBar';
 import { Box } from '@mui/material';
 const BuildSquad = () =>{
-    const tactics = ["4-4-2", "4-3-3", "5-3-2", "5-4-1"];
+    const tactics = ["3-4-3","3-5-2","3-6-1","4-2-4","4-5-1","4-4-2", "4-3-3", "5-3-2", "5-4-1"];
     const [activeTactic, setActiveTactic] = useState("");
 
     const handleTacticChange = (tactic: string) => {
