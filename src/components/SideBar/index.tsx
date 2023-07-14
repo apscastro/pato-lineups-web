@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import { Box } from '@mui/material';
 import {styles} from './styles';
 import { Select, MenuItem } from '@mui/material';
-const SideBar = ({ tactics, active }: { tactics: string[], active:string }) =>{
+const SideBar = ({ tactics, active, onTacticChange }: { tactics: string[], active:string , onTacticChange: any}) =>{
 
-    const [selectedValue, setSelectedValue] = useState('');
-
-    const handleChange = (event: any) => {
-        setSelectedValue(event.target.value);
-        active = event.target.value;
-    };
+  const handleChange = (event : any) => {
+    const selectedValue = event.target.value;
+    onTacticChange(selectedValue);
+  };
 
     return (
         <Box
@@ -19,7 +17,7 @@ const SideBar = ({ tactics, active }: { tactics: string[], active:string }) =>{
             backgroundColor: '#f2f2f2',
           }}
         >
-            <Select value={selectedValue} onChange={handleChange} fullWidth>
+            <Select value={active} onChange={handleChange} fullWidth>
             {tactics.map((tactic, index) => (
           <MenuItem key={index} value={tactic}>
             {tactic}

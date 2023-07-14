@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Field from '../../components/Field';
 import SideBar from '../../components/SideBar';
 import { Box } from '@mui/material';
 const BuildSquad = () =>{
-    let tactics = ["4-4-2", "4-3-3", "5-3-2","5-4-1"];
+    const tactics = ["4-4-2", "4-3-3", "5-3-2", "5-4-1"];
+    const [activeTactic, setActiveTactic] = useState("");
+
+    const handleTacticChange = (tactic: string) => {
+        setActiveTactic(tactic);
+    };
     return(
         <Box sx={{ display: 'flex',
         flexDirection: 'row',
@@ -12,8 +17,8 @@ const BuildSquad = () =>{
         padding: 0,
         background: '#aef359',
         height: '100vh',}}>
-            <SideBar tactics={tactics} active={""} ></SideBar>
-            <Field></Field>
+            <SideBar tactics={tactics} active={activeTactic} onTacticChange={handleTacticChange} ></SideBar>
+            <Field active = {activeTactic}></Field>
         </Box>
     )
 }
