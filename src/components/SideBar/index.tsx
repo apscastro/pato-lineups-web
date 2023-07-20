@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import {styles} from './styles';
 import { Select, MenuItem } from '@mui/material';
 const SideBar = ({ tactics, active, onTacticChange }: { tactics: string[], active:string , onTacticChange: any}) =>{
@@ -12,11 +12,13 @@ const SideBar = ({ tactics, active, onTacticChange }: { tactics: string[], activ
     return (
         <Box
           sx={{
-            width: '250px',
+            width: '350px',
             height: '100%',
             backgroundColor: '#f2f2f2',
+            padding:'10px'
           }}
         >
+          <Typography sx={{padding:'5px'}}>Select Formation</Typography>
             <Select value={active} onChange={handleChange} fullWidth>
             {tactics.map((tactic, index) => (
           <MenuItem key={index} value={tactic}>
