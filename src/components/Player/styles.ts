@@ -3,7 +3,8 @@ export const styles = {
         display: "flex",
         flexDirection: "column", 
         alignItems:"center", 
-        justifyContent:"center"
+        justifyContent:"center",
+        margin:"10px"
     },
     clickedPlayer : {
         display: "flex",
@@ -12,6 +13,7 @@ export const styles = {
         justifyContent:"center",
         border: '1px solid #ccc',
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.3)',
-        borderRadius: '10px'
+        borderRadius: '10px',
+        margin:"10px"
     }
 }
