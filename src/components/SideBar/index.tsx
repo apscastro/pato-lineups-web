@@ -15,7 +15,6 @@ const SideBar = ({ tactics, active, onTacticChange }: { tactics: string[], activ
             width: '350px',
             height: '100%',
             backgroundColor: '#f2f2f2',
-            padding:'10px'
           }}
         >
           <Typography sx={{padding:'5px'}}>Select Formation</Typography>

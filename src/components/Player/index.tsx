@@ -13,7 +13,7 @@ const Player = () =>{
     };
     return(
         <Box  sx={selected ? styles.clickedPlayer : styles.normalPlayer} onClick={() => handleDivClick()} onBlur={() => handleBlur()} tabIndex={0}  >
-          <img src={img} alt={"The image"}  draggable = {false} style={{ width: '100px' }}/>
+          <img src={img} alt={"The image"}  draggable = {false} style={{ width: '80px' }}/>
           <TextField id="outlined-basic" label="Player" variant="outlined" />
         </Box>
     )

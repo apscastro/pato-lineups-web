@@ -17,14 +17,15 @@ const FieldZone = ({ numberOfItems }: { numberOfItems: number }) =>{
   const createNObjects = () => {
     const moveables: JSX.Element[] = [];
     for (let i = 0; i < numberOfItems; i++) {
-      moveables.push(<Moveable key={i} bounds={containerBounds} />);
+      moveables.push(<Player key={i}  />);
     }
     return moveables;
   };
+
     return(
         <Box ref={containerRef} sx={{flexGrow: 1,display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'center', border: '1px solid black',width:'1000px'}}>
+                alignItems: 'center', /*border: '1px solid black',*/width:'1000px'}}>
 
             {
                 createNObjects()

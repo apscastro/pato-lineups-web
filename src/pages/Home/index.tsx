@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../../components/NavBarWelcome';
+import NavBar from '../../components/NavBar';
 import { Box, Button } from '@mui/material';
 import { styles } from './styles';
 
@@ -10,7 +10,7 @@ const Home: React.FC = () => {
 
   return (
     <Box sx={styles.homeContainer}>
-      <NavBar />
+      <NavBar currentPage='home' />
       
       <Box sx={styles.otherElements}>
         <img src="/images/centered_logo.png" alt="Logo" style={{ height: '180px', width: 'auto', filter: 'grayscale(100%)',}} />
