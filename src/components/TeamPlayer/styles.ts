@@ -1,5 +1,6 @@
 export const styles = {
     normalPlayer : {
+        width:"200px",
         display: "flex",
         flexDirection: "column", 
         alignItems:"center", 
@@ -7,6 +8,7 @@ export const styles = {
         margin:"7px"
     },
     clickedPlayer : {
+        width:"200px",
         display: "flex",
         flexDirection: "column", 
         alignItems:"center", 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Toolbar } from '@mui/material';
+import { Box, Toolbar, Typography } from '@mui/material';
 import { styles } from './styles';
 import FieldZone from '../FieldZone';
 import AppBar from '@mui/material/AppBar';
@@ -18,9 +18,15 @@ const NavBar = (props: NavBarProps) => {
       <div/>
     )
   }
+  const goToPlayersPage = () =>{
+    window.location.href = "../Players"
+  }
   const handleSquadBuildPage = ()=>{
     return(
+      <div>
         <img src="/images/SquadLineUp.png" alt="Logo" style={{ height: '20px', width: 'auto'}}/>
+        <button onClick={goToPlayersPage}>Players</button>
+      </div>
     )
   }
   return (

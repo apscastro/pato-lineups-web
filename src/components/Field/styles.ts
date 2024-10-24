@@ -10,7 +10,7 @@ export const styles = {
         background: '#FFFFFF',
         height: '100%',
         backgroundImage: `url(${fieldImage})`, // Using imported image
-    backgroundSize: '70% auto', // Image height is 100% of the container, width adjusts automatically
+    backgroundSize: '70%', // Image height is 100% of the container, width adjusts automatically
     backgroundRepeat: 'no-repeat', // Prevent the image from repeating
     backgroundPosition: 'center', // Optional: centers the image horizontally
     }

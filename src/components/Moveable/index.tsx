@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 
 import Draggable, {DraggableCore} from "react-draggable";
-import Player from '../Player';
+import Player from '../TeamPlayer';
 
 interface MoveableProps {
   bounds: { left: number; top: number; right: number; bottom: number }

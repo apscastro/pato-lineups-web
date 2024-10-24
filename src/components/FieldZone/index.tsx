@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { Box } from '@mui/material';
 import {styles} from './styles';
-import Player from '../Player';
+import TeamPlayer from '../TeamPlayer';
 import Moveable from '../Moveable';
 const FieldZone = ({ numberOfItems }: { numberOfItems: number }) =>{
     const containerRef = useRef<HTMLDivElement>(null);
@@ -17,7 +17,7 @@ const FieldZone = ({ numberOfItems }: { numberOfItems: number }) =>{
   const createNObjects = () => {
     const moveables: JSX.Element[] = [];
     for (let i = 0; i < numberOfItems; i++) {
-      moveables.push(<Player key={i}  />);
+      moveables.push(<TeamPlayer key={i}  />);
     }
     return moveables;
   };

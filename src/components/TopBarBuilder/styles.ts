@@ -5,6 +5,7 @@ export const styles = {
     },
     toolbar: {
       display: 'flex',
+      alignContent:''
     },
     select:{
         color:"rgba(255,255,255,0.25)",
